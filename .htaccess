@@ -7,4 +7,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /paris.jobfair-g4/index.php [L]
 </IfModule>
+
 # END WordPress
