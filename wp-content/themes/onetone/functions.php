@@ -126,3 +126,21 @@ function my_sort_entreprise( $vars ) {
 
 	return $vars;
 }
+
+
+
+
+add_action( 'wp_ajax_get_post_information', 'ajax_get_post_information' );
+add_action( 'wp_ajax_nopriv_get_post_information', 'ajax_get_post_information' );
+
+function ajax_get_post_information() 
+{
+    if(!empty($_POST['post_id']))
+    {
+        $post = get_post( $_POST['post_id'] );
+
+        echo json_encode( $post );
+    }	
+
+    die();
+}
