@@ -139,4 +139,48 @@ get_header();
  ?>
 <div class="clear"></div>  
 </div>
+
+
+<section class="cd-section">
+	<!-- section content here -->
+ 
+	<div class="cd-modal-action">
+		<a href="#0" class="btn" data-type="modal-trigger">Inscivez-vous !</a>
+		<span class="cd-modal-bg"></span>
+	</div>
+ 
+	<div class="cd-modal">
+		<div class="cd-modal-content">
+			<div id="postbox">
+			    <form id="new_post" name="new_post" method="post" action="">
+			        <!-- post name -->
+			        <label for="title">Title</label><br />
+			        <input type="text" id="title" value="" tabindex="1" size="20" name="title" />
+			        
+			   
+			        
+			       
+			       
+			        <!-- post Content -->
+			        <label for="description">Content</label><br />
+			        <textarea id="description" tabindex="4" name="description" cols="50" rows="6"></textarea>
+			        
+			       
+			        <!-- post tags -->
+			        <label for="post_tags">Tags:</label>
+			        <input type="text" value="" tabindex="5" size="16" name="post_tags" id="post_tags" />
+			        <input type="submit" value="Publish" tabindex="6" id="submit" name="submit" />
+			       
+			        <input type="hidden" name="action" value="new_post" />
+			        <?php wp_nonce_field( 'new-post' ); ?>
+			    </form>
+			   
+			</div>
+		</div>
+	</div>
+ 
+	<a href="#0" class="cd-modal-close">Close</a>
+</section>
+
+
 <?php get_footer();}?>
