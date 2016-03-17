@@ -2369,3 +2369,7 @@ line-height:14px;
   opacity: 1;
   visibility: visible;
 }
+
+fieldset{
+	border: none;
+}

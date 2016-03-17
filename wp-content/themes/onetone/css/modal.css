@@ -80,7 +80,7 @@ Main Components
   margin: 2em 0;
 }
 .modal-is-visible .cd-modal {
-  z-index: 100;
+  z-index: 200;
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -166,7 +166,7 @@ Main Components
 
 .cd-modal-close {
   position: fixed;
-  z-index: 101;
+  z-index: 300;
   top: 20px;
   right: 5%;
   height: 50px;

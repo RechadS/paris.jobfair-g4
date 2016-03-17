@@ -183,18 +183,4 @@ get_header();
 </section>
 
 
-
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-    /*var data = {
-        action: 'my_action',
-        whatever: 1234
-    };
-
-    jQuery.post(ajaxurl, data, function(response) {
-        alert('Got this from the server: ' + response);
-    });*/
-});
-</script>
-
 <?php get_footer();}?>

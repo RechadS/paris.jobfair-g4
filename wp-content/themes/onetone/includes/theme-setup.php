@@ -77,7 +77,8 @@ add_action( 'after_setup_theme', 'onetone_setup' );
 	wp_enqueue_script( 'onetone-carousel', get_template_directory_uri().'/js/owl.carousel.js', array( 'jquery' ), '1.3.3 ', true );
 	wp_enqueue_script( 'onetone-default', get_template_directory_uri().'/js/onetone.js', array( 'jquery' ), '1.3.0', true );
 	wp_enqueue_script( 'onetone-velocity', get_template_directory_uri().'/js/velocity.min.js', array( 'jquery' ), '1.3.0', true );
-	wp_enqueue_script( 'onetone-modal', get_template_directory_uri().'/js/modal.js', array( 'jquery' ), '1.3.0', true );
+	wp_enqueue_script( 'onetone-modaljs', get_template_directory_uri().'/js/modal.js', array( 'jquery' ), '1.3.0', true );
+	
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ){wp_enqueue_script( 'comment-reply' );}
 	
